@@ -49,9 +49,16 @@ nav .navbar-nav .nav-link.jquery-active {
 /* Imagen del carousel - cubre toda la pantalla */
 .carousel-img {
   height: 100vh;
+  min-height: 400px;
   object-fit: cover;
   object-position: center;
   filter: brightness(0.65);
+}
+
+@media (max-width: 576px) {
+  .carousel-img {
+    height: 60vh;
+  }
 }
 
 /* Texto del caption sobre el carousel */
