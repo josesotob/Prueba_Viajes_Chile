@@ -1,4 +1,36 @@
+/* ===== SECCIÓN INICIO ===== */
 #inicio {
-  background-color: #2caebb; /* El color turquesa de tu imagen */
-  min-height: 100vh; /* O la altura que desees para tu portada */
+  background-color: #2caebb;
+  min-height: 100vh;
+}
+
+/* ===== LOGO NAVBAR ===== */
+.logo-nav {
+  width: 32px;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ===== MARCA NAVBAR ===== */
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ffffff !important;
+}
+
+/* ===== LINKS NAVBAR - estado normal ===== */
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 400;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* ===== LINK ACTIVO - cuando jQuery agrega la clase ===== */
+/* Doble selector para ganarle a Bootstrap con !important */
+nav .navbar-nav .nav-link.jquery-active {
+  color: #000000 !important;
+  font-weight: 700 !important;
 }
