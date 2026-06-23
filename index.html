@@ -39,11 +39,11 @@
       </div>
     </div>
   </nav>
-
+  
   <!-- ===== SECCIÓN INICIO - CAROUSEL ===== -->
   <section id="inicio">
 
-    <!-- Carousel Bootstrap - muestra imágenes destacadas del sitio -->
+    <!-- Carousel Bootstrap -  -->
     <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
 
       <!-- Indicadores -->
@@ -92,45 +92,181 @@
         <span class="visually-hidden">Siguiente</span>
       </button>
 
-    </div>
+  </div>
     <!-- /Carousel -->
 
-  <!-- ===== SECCIÓN QUIÉNES SOMOS ===== -->
-  <section id="quienes-somos" class="py-5">
+  </section>
+  <!-- /INICIO -->
+
+
+
+
+<!-- ===== SECCIÓN QUIÉNES SOMOS ===== -->
+<section id="quienes-somos" class="py-5">
+  <div class="container">
+
+    <h2 class="text-center section-title mb-5">¿Quiénes Somos?</h2>
+    <div class="row d-none d-md-flex text-center mb-5">
+
+      <div class="col-md-4 mb-4">
+        <i class="fa-solid fa-mountain-sun fa-3x mb-3" style="color:#2caebb;"
+           data-bs-toggle="tooltip" title="Exploramos Chile"></i>
+        <h5>Nuestra Misión</h5>
+        <p>Conectamos viajeros con los destinos más espectaculares de Chile, diseñando experiencias auténticas e irrepetibles.</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <i class="fa-solid fa-compass fa-3x mb-3" style="color:#2caebb;"
+           data-bs-toggle="tooltip" title="Guías expertos"></i>
+        <h5>Nuestra Visión</h5>
+        <p>Ser la agencia más reconocida del país con guías expertos que conocen cada rincón del territorio nacional.</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <i class="fa-solid fa-earth-americas fa-3x mb-3" style="color:#2caebb;"
+           data-bs-toggle="tooltip" title="Turismo responsable"></i>
+        <h5>Nuestros Valores</h5>
+        <p>Practicamos turismo responsable respetando comunidades locales y ecosistemas naturales de Chile.</p>
+      </div>
+
+    </div>
+
+    <!-- Contadores animados con jQuery -->
+    <div class="row text-center">
+
+      <div class="col-4">
+        <h3 class="contador" data-meta="520" style="color:#2caebb; font-family:'Montserrat',sans-serif; font-weight:700; font-size:2.5rem;">0</h3>
+        <p style="font-weight:600;">Viajes realizados</p>
+      </div>
+
+      <div class="col-4">
+        <h3 class="contador" data-meta="12" style="color:#2caebb; font-family:'Montserrat',sans-serif; font-weight:700; font-size:2.5rem;">0</h3>
+        <p style="font-weight:600;">Años de experiencia</p>
+      </div>
+
+      <div class="col-4">
+        <h3 class="contador" data-meta="50" style="color:#2caebb; font-family:'Montserrat',sans-serif; font-weight:700; font-size:2.5rem;">0</h3>
+        <p style="font-weight:600;">Destinos disponibles</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- /QUIÉNES SOMOS -->
+  <!-- ===== SECCIÓN DESTACADOS ===== -->
+<section id="destacados" class="py-5" style="background-color:#111111;">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color:white; font-family:'Montserrat',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.08em;">Destacados</h2>
+
+    <div class="row g-4">
+
+      <!-- Card 1 - Torres del Paine (Información por verificiar) -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card-destino" onclick="toggleCard(this)">
+          <img src="assets/img/card1.jpg" alt="Torres del Paine">
+          <div class="card-destino__body">
+            <h5>Torres del Paine</h5>
+            <p>Lago Pehoé con su color turquesa y los Cuernos del Paine al fondo. Patagonia pura.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 - Laguna Verde -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card-destino" onclick="toggleCard(this)">
+          <img src="assets/img/card2.jpg" alt="Laguna Verde">
+          <div class="card-destino__body">
+            <h5>Laguna Verde</h5>
+            <p>Lago salado rodeado de volcanes en el altiplano atacameño. Reflejos perfectos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 - Salar de Atacama -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card-destino" onclick="toggleCard(this)">
+          <img src="assets/img/card3.jpg" alt="Salar de Atacama">
+          <div class="card-destino__body">
+            <h5>Salar de Atacama</h5>
+            <p>La mayor salina de Chile. Flamencos entre lagunas sobre costra de sal texturizada.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 - Parque Alerce Andino -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card-destino" onclick="toggleCard(this)">
+          <img src="assets/img/card4.jpg" alt="Alerce Andino">
+          <div class="card-destino__body">
+            <h5>Alerce Andino</h5>
+            <p>Bosque lluvioso milenario en Los Lagos. Helechos y selva valdiviana en estado puro.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /DESTACADOS -->
+<!-- ===== SECCIÓN CONTACTO ===== -->
+  <section id="contacto" class="py-5" style="background-color:#111111;">
     <div class="container">
-      <h2 class="text-center section-title mb-5">¿Quiénes Somos?</h2>
 
-      <!-- Se oculta en pantallas pequeñas con d-none d-md-flex -->
-      <div class="row d-none d-md-flex text-center">
+      <h2 class="text-center section-title section-title--white mb-2">Contacto</h2>
+      <p class="text-center mb-5" style="color:rgba(255,255,255,0.7);">¿Tienes alguna consulta? Escríbenos y te responderemos a la brevedad.</p>
 
-        <div class="col-md-4 mb-4">
-          <i class="fa-solid fa-mountain-sun fa-3x mb-3" style="color:#2caebb;"></i>
-          <h5>Nuestra Misión</h5>
-          <p>Conectamos viajeros con los destinos más espectaculares de Chile.</p>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+
+          <div class="mb-3">
+            <label class="form-label" style="color:rgba(255,255,255,0.85); font-weight:600;">Nombre</label>
+            <input type="text" class="form-control contacto-input" id="nombre" placeholder="Tu nombre completo">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" style="color:rgba(255,255,255,0.85); font-weight:600;">Asunto</label>
+            <input type="text" class="form-control contacto-input" id="asunto" placeholder="¿En qué podemos ayudarte?">
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label" style="color:rgba(255,255,255,0.85); font-weight:600;">Mensaje</label>
+            <textarea class="form-control contacto-input" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+
+          <div class="d-grid">
+            <button type="button" id="enviarMensaje" class="btn" style="background-color:#2caebb; color:white; font-weight:700;">
+              <i class="fa-solid fa-paper-plane me-2"></i>Enviar
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /CONTACTO -->
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="py-4" style="background-color:#2caebb;">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span style="font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:0.12em; color:white;">VIAJES CHILE</span>
         </div>
 
-        <div class="col-md-4 mb-4">
-          <i class="fa-solid fa-compass fa-3x mb-3" style="color:#2caebb;"></i>
-          <h5>Nuestra Visión</h5>
-          <p>Ser la agencia más reconocida del país con guías expertos en cada ruta.</p>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <i class="fa-solid fa-earth-americas fa-3x mb-3" style="color:#2caebb;"></i>
-          <h5>Nuestros Valores</h5>
-          <p>Practicamos turismo responsable respetando comunidades y ecosistemas.</p>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <a href="#" class="footer-icon me-3" aria-label="GitHub"><i class="fa-brands fa-github fa-lg"></i></a>
+          <a href="#" class="footer-icon me-3" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+          <a href="#" class="footer-icon me-3" aria-label="Twitter"> <i class="fa-brands fa-twitter fa-lg"></i></a>
+          <a href="#" class="footer-icon" aria-label="Facebook"><i class="fa-brands fa-facebook fa-lg"></i></a>
         </div>
 
       </div>
     </div>
-  </section>
-  <!-- /QUIÉNES SOMOS -->
-
-  <section id="destacados"></section>
-
-  <section id="contacto"></section>
-
-  <footer></footer>
+  </footer>
+  <!-- /FOOTER -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 

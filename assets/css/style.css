@@ -1,9 +1,14 @@
-/* ===== SECCIÓN INICIO ===== */
-#inicio {
-  background-color: #2caebb;
-  min-height: 100vh;
-}
+/* ============================================================
+   VIAJES CHILE - style.css
+   Fuente: Montserrat (Google Fonts)
+   Íconos: Font Awesome 6.4.0
+   Framework: Bootstrap 5.3.8
+   ============================================================ */
 
+/* ===== BODY ===== */
+body {
+  scroll-behavior: smooth;
+}
 /* ===== LOGO NAVBAR ===== */
 .logo-nav {
   width: 32px;
@@ -34,8 +39,10 @@ nav .navbar-nav .nav-link.jquery-active {
   color: #000000 !important;
   font-weight: 700 !important;
 }
+
+
+/* ===== SECCIÓN INICIO / CAROUSEL ===== */
 #inicio {
-  /* El carousel ocupa el alto de la ventana */
   min-height: 100vh;
 }
 
@@ -44,13 +51,12 @@ nav .navbar-nav .nav-link.jquery-active {
   height: 100vh;
   object-fit: cover;
   object-position: center;
-  /* Filtro oscuro para que el texto del caption sea legible */
   filter: brightness(0.65);
 }
 
 /* Texto del caption sobre el carousel */
 .carousel-caption h2 {
-  font-family: var(--font-main);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.2rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
@@ -59,4 +65,95 @@ nav .navbar-nav .nav-link.jquery-active {
 .carousel-caption p {
   font-size: 1.05rem;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ===== SECCIÓN QUIÉNES SOMOS ===== */
+#quienes-somos {
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+/* ===== SECCIÓN DESTACADOS ===== */
+.card-destino {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #2caebb;
+}
+
+.card-destino img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texto OCULTO por defecto */
+.card-destino__body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  background-color: #2caebb;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* Texto VISIBLE cuando tiene clase .abierta */
+.card-destino.abierta .card-destino__body {
+  max-height: 150px;
+  padding: 1rem;
+}
+
+.card-destino__body h5 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-destino__body p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  margin: 0;
+}
+/* ===== SECCIÓN CONTACTO ===== */
+.section-title--white {
+  color: white;
+}
+
+.contacto-input {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: white;
+}
+
+.contacto-input:focus {
+  background-color: rgba(255,255,255,0.05);
+  border-color: #2caebb;
+  color: white;
+  box-shadow: 0 0 0 3px rgba(44,174,187,0.25);
+}
+
+.contacto-input::placeholder {
+  color: rgba(255,255,255,0.35);
+}
+
+/* ===== FOOTER ===== */
+.footer-icon {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #111111;
 }
