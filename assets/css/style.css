@@ -44,6 +44,7 @@ nav .navbar-nav .nav-link.jquery-active {
 /* ===== SECCIÓN INICIO / CAROUSEL ===== */
 #inicio {
   min-height: 100vh;
+  overflow: hidden;
 }
 
 /* Imagen del carousel - cubre toda la pantalla */
@@ -163,4 +164,18 @@ nav .navbar-nav .nav-link.jquery-active {
 
 .footer-icon:hover {
   color: #111111;
+}
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 576px) {
+  #inicio {
+    min-height: 0;
+  }
+
+  .carousel, .carousel-inner, .carousel-item {
+    height: 60vh;
+  }
+
+  .contador {
+    font-size: 1.8rem !important;
+  }
 }
